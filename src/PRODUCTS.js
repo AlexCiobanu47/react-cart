@@ -7,7 +7,7 @@ import morocan from "./images/morocanCoffee.jpg";
 import neworleans from "./images/newOrleansCoffee.jpg";
 import viennese from "./images/vienneseCoffee.jpg";
 
-export const PRODUCTS = [
+const PRODUCTS = [
     {
         id: 1,
         name: "American coffee",
@@ -57,3 +57,5 @@ export const PRODUCTS = [
         image:  {viennese},
     }
 ]
+
+export default PRODUCTS;
