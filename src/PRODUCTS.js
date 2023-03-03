@@ -12,50 +12,58 @@ const PRODUCTS = [
         id: 1,
         name: "American coffee",
         price: 10,
-        image:  {american},
+        image:  american,
+        quantity: 1,
     },
     {
         id: 2,
         name: "Brazilian coffee",
         price: 10,
-        image:  {brazil},
+        image:  brazil,
+        quantity: 1,
     },
     {
         id: 3,
         name: "French coffee",
         price: 10,
-        image:  {french},
+        image:  french,
+        quantity: 1,
     },
     {
         id: 4,
         name: "Italian coffee",
         price: 10,
-        image:  {italian},
+        image:  italian,
+        quantity: 1,
     },
     {
         id: 5,
         name: "Kenyan coffee",
         price: 10,
-        image:  {kenyan},
+        image:  kenyan,
+        quantity: 1,
     },
     {
         id: 6,
         name: "Morocan coffee",
         price: 10,
-        image:  {morocan},
+        image:  morocan,
+        quantity: 1,
     },
     {
         id: 7,
         name: "New Orleans coffee",
         price: 10,
-        image:  {neworleans},
+        image:  neworleans,
+        quantity: 1,
     },
     {
         id: 8,
         name: "Vienesse coffee",
         price: 10,
-        image:  {viennese},
-    }
-]
+        image:  viennese,
+        quantity: 1,
+    },
+];
 
 export default PRODUCTS;
