@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/AlexCiobanu47/react-cart/static/js/main.a5949174.js",
+    "static/media/morocanCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/morocanCoffee.3cfd3e90e3efeb1836fe.jpg",
+    "static/media/italianCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/italianCoffee.d175c33979b654418f5b.jpg",
+    "static/media/vienneseCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/vienneseCoffee.31dfb657b2a1d9978a20.jpg",
+    "static/media/newOrleansCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/newOrleansCoffee.a4b80e93c2dc3e391978.jpg",
+    "static/media/brazilCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/brazilCoffee.122ea9b87540e6123da7.jpg",
+    "static/media/kenyaCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/kenyaCoffee.4c93181d31f8fe7ca77a.jpg",
+    "static/media/americanCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/americanCoffee.5b07a7fce17e8a94d2d8.jpg",
+    "static/media/frenchCoffee.jpg": "/AlexCiobanu47/react-cart/static/media/frenchCoffee.a244bf43bfe7af3babb8.jpg",
+    "index.html": "/AlexCiobanu47/react-cart/index.html",
+    "main.a5949174.js.map": "/AlexCiobanu47/react-cart/static/js/main.a5949174.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a5949174.js"
+  ]
+}
