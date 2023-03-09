@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
-const Shop = ({ cart, setCart, displayCart }) => {
+const Shop = ({ cart, setCart, displayCart, addToCart }) => {
   const handleClick = () => {
     displayCart();
   };
@@ -20,6 +20,7 @@ const Shop = ({ cart, setCart, displayCart }) => {
             image={product.image}
             price={product.price}
             key={product.id}
+            addToCart={addToCart}
           />
         ))}
       </Products>

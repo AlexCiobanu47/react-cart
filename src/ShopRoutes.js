@@ -16,7 +16,11 @@ const ShopRoutes = ({
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/shop" element={<Shop displayCart={displayCart} />} />
+      <Route
+        exact
+        path="/shop"
+        element={<Shop displayCart={displayCart} addToCart={addToCart} />}
+      />
       <Route
         exact
         path="/shop/1"

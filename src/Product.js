@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-const Product = ({ id, name, image, price }) => {
+const Product = ({ id, name, image, price, addToCart }) => {
+  const handleClick = () => {
+    addToCart({ id, name, image });
+  };
   return (
     <ProductWrapper>
       <LinkWrapper key={id} to={`/shop/${id}`}>
         <ImageWrapper>
           <ItemImage src={image}></ItemImage>
         </ImageWrapper>
-        <ItemDescriptionWrapper>
-          <ItemName>{name}</ItemName>
-          <ItemPrice>${price}</ItemPrice>
-        </ItemDescriptionWrapper>
       </LinkWrapper>
+      <ItemDescriptionWrapper>
+        <ItemName>{name}</ItemName>
+        <BuyWrapper>
+          <ItemPrice>${price}</ItemPrice>
+          <BuyButton onClick={handleClick}>BUY</BuyButton>
+        </BuyWrapper>
+      </ItemDescriptionWrapper>
     </ProductWrapper>
   );
 };
@@ -38,5 +44,10 @@ const ItemDescriptionWrapper = styled.div`
   align-items: center;
 `;
 const ItemName = styled.h1``;
+const BuyWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 const ItemPrice = styled.p``;
+const BuyButton = styled.button``;
 export default Product;
