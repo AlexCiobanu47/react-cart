@@ -1,9 +1,13 @@
-import React from "react";
-import Shop from "./Shop";
+import React, { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ShopRoutes from "./ShopRoutes";
 function App() {
+  const [cart, setCart] = useState([]);
   return (
     <div className="App">
-      <Shop/>
+      <BrowserRouter>
+        <ShopRoutes />
+      </BrowserRouter>
     </div>
   );
 }
