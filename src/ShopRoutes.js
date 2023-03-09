@@ -5,12 +5,18 @@ import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
 import Shop from "./Shop";
 import ShopItem from "./ShopItem";
-
-const ShopRoutes = () => {
+const ShopRoutes = ({
+  cart,
+  setCart,
+  displayCart,
+  addToCart,
+  changeQuantity,
+}) => {
+  //TODO display cart
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/shop" element={<Shop />} />
+      <Route exact path="/shop" element={<Shop displayCart={displayCart} />} />
       <Route
         exact
         path="/shop/1"
@@ -19,6 +25,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[0].image}
             name={PRODUCTS[0].name}
             price={PRODUCTS[0].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -31,6 +38,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[1].image}
             name={PRODUCTS[1].name}
             price={PRODUCTS[1].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -43,6 +51,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[2].image}
             name={PRODUCTS[2].name}
             price={PRODUCTS[2].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -55,6 +64,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[3].image}
             name={PRODUCTS[3].name}
             price={PRODUCTS[3].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -67,6 +77,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[4].image}
             name={PRODUCTS[4].name}
             price={PRODUCTS[4].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -79,6 +90,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[5].image}
             name={PRODUCTS[5].name}
             price={PRODUCTS[5].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -91,6 +103,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[6].image}
             name={PRODUCTS[6].name}
             price={PRODUCTS[6].price}
+            addToCart={addToCart}
           />
         }
       />
@@ -103,6 +116,7 @@ const ShopRoutes = () => {
             image={PRODUCTS[7].image}
             name={PRODUCTS[7].name}
             price={PRODUCTS[7].price}
+            addToCart={addToCart}
           />
         }
       />

@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-const ShopItem = ({ id, name, image, price }) => {
+const ShopItem = ({ id, name, image, price, addToCart }) => {
+  const handleClick = () => {
+    addToCart({ id, name, image });
+  };
   return (
     <ItemWrapper>
       <ItemImage src={image} />
@@ -21,7 +24,7 @@ const ShopItem = ({ id, name, image, price }) => {
           distinctio incidunt.
         </ItemDescription>
         <ItemPrice>${price}</ItemPrice>
-        <BuyItem>Buy</BuyItem>
+        <BuyItem onClick={handleClick}>Buy</BuyItem>
       </SideWrapper>
     </ItemWrapper>
   );

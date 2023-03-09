@@ -1,39 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
-const Shop = (cart, setCart) => {
-  const addToCart = (item) => {
-    if (cart.length === 0) {
-      const newCart = cart.slice();
-      newCart.push(item);
-      setCart(newCart);
-    } else {
-      const alreadyInCart = cart
-        .map((cartItem) => cartItem.id)
-        .includes(item.id);
-      if (alreadyInCart) {
-        changeQuantity(item.id);
-      } else {
-        setCart([...cart, item]);
-      }
-    }
-  };
-  const changeQuantity = (id) => {
-    setCart(
-      cart.map((item) =>
-        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
-      )
-    );
-  };
-  const displayCart = () => {
-    console.log(cart);
+const Shop = ({ cart, setCart, displayCart }) => {
+  const handleClick = () => {
+    displayCart();
   };
   return (
     <ShopWrapper>
       <div className="shopTitle">
         <h1>Shop</h1>
-        <button onClick={displayCart}>SHOW CART</button>
+        <button onClick={handleClick}>SHOW CART</button>
       </div>
       <Products>
         {PRODUCTS.map((product) => (
