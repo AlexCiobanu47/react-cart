@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-const ShopItem = ({ id, name, image, price, addToCart }) => {
+const ShopItem = ({ id, name, image, price, quantity, addToCart }) => {
   const handleClick = () => {
-    addToCart({ id, name, image });
+    addToCart({ id, name, image, quantity });
   };
   return (
     <ItemWrapper>

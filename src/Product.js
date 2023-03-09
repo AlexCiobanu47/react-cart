@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-const Product = ({ id, name, image, price, addToCart }) => {
+const Product = ({ id, name, image, price, quantity, addToCart }) => {
   const handleClick = () => {
-    addToCart({ id, name, image });
+    addToCart({ id, name, image, quantity });
   };
   return (
     <ProductWrapper>

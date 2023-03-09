@@ -26,10 +26,12 @@ const ShopRoutes = ({
         path="/shop/1"
         element={
           <ShopItem
+            id={PRODUCTS[0].id}
             image={PRODUCTS[0].image}
             name={PRODUCTS[0].name}
             price={PRODUCTS[0].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[0].quantity}
           />
         }
       />
@@ -43,6 +45,7 @@ const ShopRoutes = ({
             name={PRODUCTS[1].name}
             price={PRODUCTS[1].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[1].quantity}
           />
         }
       />
@@ -56,6 +59,7 @@ const ShopRoutes = ({
             name={PRODUCTS[2].name}
             price={PRODUCTS[2].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[2].quantity}
           />
         }
       />
@@ -69,6 +73,7 @@ const ShopRoutes = ({
             name={PRODUCTS[3].name}
             price={PRODUCTS[3].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[3].quantity}
           />
         }
       />
@@ -82,6 +87,7 @@ const ShopRoutes = ({
             name={PRODUCTS[4].name}
             price={PRODUCTS[4].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[4].quantity}
           />
         }
       />
@@ -95,6 +101,7 @@ const ShopRoutes = ({
             name={PRODUCTS[5].name}
             price={PRODUCTS[5].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[5].quantity}
           />
         }
       />
@@ -108,6 +115,7 @@ const ShopRoutes = ({
             name={PRODUCTS[6].name}
             price={PRODUCTS[6].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[6].quantity}
           />
         }
       />
@@ -121,6 +129,7 @@ const ShopRoutes = ({
             name={PRODUCTS[7].name}
             price={PRODUCTS[7].price}
             addToCart={addToCart}
+            quantity={PRODUCTS[7].quantity}
           />
         }
       />
