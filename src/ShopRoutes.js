@@ -5,14 +5,7 @@ import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
 import Shop from "./Shop";
 import ShopItem from "./ShopItem";
-const ShopRoutes = ({
-  cart,
-  setCart,
-  displayCart,
-  addToCart,
-  changeQuantity,
-}) => {
-  //TODO display cart
+const ShopRoutes = ({ displayCart, addToCart }) => {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
