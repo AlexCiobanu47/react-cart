@@ -58,10 +58,10 @@ function App() {
   const displayCart = () => {
     console.log(cart);
   };
-  //basename={process.env.PUBLIC_URL}
+  //
   return (
     <AppWrapper>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ShopRoutes
           cart={cart}
           setCart={setCart}
