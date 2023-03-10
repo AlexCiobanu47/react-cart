@@ -9,13 +9,13 @@ const Shop = ({ displayCart, addToCart }) => {
   };
   return (
     <ShopWrapper>
-      <div className="shopTitle">
+      <HeaderWrapper>
         <h1>Shop</h1>
-        <Link to={"/cart"}>
+        <LinkWrappper to={"/cart"}>
           {" "}
           <button onClick={handleClick}>SHOW CART</button>
-        </Link>
-      </div>
+        </LinkWrappper>
+      </HeaderWrapper>
       <Products>
         {PRODUCTS.map((product) => (
           <Product
@@ -32,6 +32,15 @@ const Shop = ({ displayCart, addToCart }) => {
     </ShopWrapper>
   );
 };
+const HeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const LinkWrappper = styled(Link)`
+  align-self: flex-end;
+`;
 const ShopWrapper = styled.div`
   display: flex;
   flex-direction: column;

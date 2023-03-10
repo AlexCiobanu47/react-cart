@@ -6,11 +6,21 @@ import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
 import Shop from "./Shop";
 import ShopItem from "./ShopItem";
-const ShopRoutes = ({ cart, displayCart, addToCart }) => {
+const ShopRoutes = ({ cart, displayCart, addToCart, removeFromCart }) => {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/cart" element={<Cart cart={cart} />} />
+      <Route
+        exact
+        path="/cart"
+        element={
+          <Cart
+            cart={cart}
+            addToCart={addToCart}
+            removeFromCart={removeFromCart}
+          />
+        }
+      />
       <Route
         exact
         path="/shop"
