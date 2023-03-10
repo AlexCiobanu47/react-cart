@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+import styled from "styled-components";
 import ShopRoutes from "./ShopRoutes";
 function App() {
   const [cart, setCart] = useState([]);
@@ -33,6 +34,10 @@ function App() {
           console.log(
             "Couldn't remove the item from shopping cart: The item no longer exits."
           );
+          const newCart = cart.filter(function (cartItem) {
+            return cartItem.id !== item.id;
+          });
+          setCart(newCart);
         } else {
           changeQuantity(item.id, -1);
         }
@@ -53,9 +58,10 @@ function App() {
   const displayCart = () => {
     console.log(cart);
   };
+  //basename={process.env.PUBLIC_URL}
   return (
-    <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <AppWrapper>
+      <BrowserRouter>
         <ShopRoutes
           cart={cart}
           setCart={setCart}
@@ -65,8 +71,9 @@ function App() {
           changeQuantity={changeQuantity}
         />
       </BrowserRouter>
-    </div>
+    </AppWrapper>
   );
 }
 
+const AppWrapper = styled.div``;
 export default App;
