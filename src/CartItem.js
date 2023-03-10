@@ -43,7 +43,7 @@ const ProductWrapper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #7f7f7f;
+  background-color: #4949493a;
   padding: 2rem;
   width: 700px;
 `;
@@ -72,9 +72,9 @@ const ButtonTemplate = styled.button`
   border-radius: 10px;
 `;
 const IncreaseQuantityButton = styled(ButtonTemplate)`
-  background-color: green;
+  background-color: #5d9c59;
 `;
 const DecreaseQuantityButton = styled(ButtonTemplate)`
-  background-color: red;
+  background-color: #df2e38;
 `;
 export default CartItem;
