@@ -1,14 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Cart from "./Cart";
 import Home from "./Home";
 import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
 import Shop from "./Shop";
 import ShopItem from "./ShopItem";
-const ShopRoutes = ({ displayCart, addToCart }) => {
+const ShopRoutes = ({ cart, displayCart, addToCart }) => {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
+      <Route exact path="/cart" element={<Cart cart={cart} />} />
       <Route
         exact
         path="/shop"

@@ -1,22 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-const Product = ({ id, name, image, price, quantity, addToCart }) => {
-  const handleClick = () => {
-    addToCart({ id, name, price, image, quantity });
-  };
+const CartItem = ({ id, name, image, price, quantity }) => {
+  const handleClick = () => {};
   return (
     <ProductWrapper>
-      <LinkWrapper key={id} to={`/shop/${id}`}>
-        <ImageWrapper>
-          <ItemImage src={image}></ItemImage>
-        </ImageWrapper>
-      </LinkWrapper>
+      <ImageWrapper>
+        <ItemImage src={image}></ItemImage>
+      </ImageWrapper>
       <ItemDescriptionWrapper>
         <ItemName>{name}</ItemName>
         <BuyWrapper>
           <ItemPrice>${price}</ItemPrice>
-          <BuyButton onClick={handleClick}>BUY</BuyButton>
         </BuyWrapper>
       </ItemDescriptionWrapper>
     </ProductWrapper>
@@ -25,13 +20,9 @@ const Product = ({ id, name, image, price, quantity, addToCart }) => {
 
 const ProductWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
-const LinkWrapper = styled(Link)`
-  color: black;
-  text-decoration: none;
 `;
 const ImageWrapper = styled.div``;
 const ItemImage = styled.img`
@@ -50,4 +41,4 @@ const BuyWrapper = styled.div`
 `;
 const ItemPrice = styled.p``;
 const BuyButton = styled.button``;
-export default Product;
+export default CartItem;

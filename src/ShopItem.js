@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const ShopItem = ({ id, name, image, price, quantity, addToCart }) => {
   const handleClick = () => {
-    addToCart({ id, name, image, quantity });
+    addToCart({ id, name, price, image, quantity });
   };
   return (
     <ItemWrapper>

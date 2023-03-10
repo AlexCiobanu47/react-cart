@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Product from "./Product";
 import PRODUCTS from "./PRODUCTS";
@@ -10,7 +11,10 @@ const Shop = ({ displayCart, addToCart }) => {
     <ShopWrapper>
       <div className="shopTitle">
         <h1>Shop</h1>
-        <button onClick={handleClick}>SHOW CART</button>
+        <Link to={"/cart"}>
+          {" "}
+          <button onClick={handleClick}>SHOW CART</button>
+        </Link>
       </div>
       <Products>
         {PRODUCTS.map((product) => (
