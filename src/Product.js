@@ -49,5 +49,16 @@ const BuyWrapper = styled.div`
   justify-content: center;
 `;
 const ItemPrice = styled.p``;
-const BuyButton = styled.button``;
+const BuyButton = styled.button`
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 8rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  :hover {
+    background-color: #5d9c59;
+  }
+`;
 export default Product;

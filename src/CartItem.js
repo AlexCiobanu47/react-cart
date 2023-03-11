@@ -70,6 +70,7 @@ const ButtonTemplate = styled.button`
   border: none;
   padding: 1rem;
   border-radius: 10px;
+  cursor: pointer;
 `;
 const IncreaseQuantityButton = styled(ButtonTemplate)`
   background-color: #5d9c59;

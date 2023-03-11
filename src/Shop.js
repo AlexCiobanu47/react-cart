@@ -13,7 +13,7 @@ const Shop = ({ displayCart, addToCart }) => {
         <h1>Shop</h1>
         <LinkWrappper to={"/cart"}>
           {" "}
-          <button onClick={handleClick}>SHOW CART</button>
+          <BuyButton onClick={handleClick}>SHOW CART</BuyButton>
         </LinkWrappper>
       </HeaderWrapper>
       <Products>
@@ -40,6 +40,13 @@ const HeaderWrapper = styled.div`
 `;
 const LinkWrappper = styled(Link)`
   align-self: flex-end;
+`;
+const BuyButton = styled.button`
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
 `;
 const ShopWrapper = styled.div`
   display: flex;
