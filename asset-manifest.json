@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/react-cart/static/js/main.a7486c58.js",
+    "main.js": "/react-cart/static/js/main.40f05258.js",
     "static/media/coffee-image.jpg": "/react-cart/static/media/coffee-image.7ab34d5c2c2d50166f18.jpg",
     "static/media/morocanCoffee.jpg": "/react-cart/static/media/morocanCoffee.3cfd3e90e3efeb1836fe.jpg",
     "static/media/italianCoffee.jpg": "/react-cart/static/media/italianCoffee.d175c33979b654418f5b.jpg",
@@ -11,9 +11,9 @@
     "static/media/americanCoffee.jpg": "/react-cart/static/media/americanCoffee.5b07a7fce17e8a94d2d8.jpg",
     "static/media/frenchCoffee.jpg": "/react-cart/static/media/frenchCoffee.a244bf43bfe7af3babb8.jpg",
     "index.html": "/react-cart/index.html",
-    "main.a7486c58.js.map": "/react-cart/static/js/main.a7486c58.js.map"
+    "main.40f05258.js.map": "/react-cart/static/js/main.40f05258.js.map"
   },
   "entrypoints": [
-    "static/js/main.a7486c58.js"
+    "static/js/main.40f05258.js"
   ]
 }
